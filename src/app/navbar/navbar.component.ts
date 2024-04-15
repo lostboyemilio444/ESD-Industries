@@ -14,14 +14,61 @@ import { ContactMeComponent } from '../contact-me/contact-me.component';
 })
 export class NavbarComponent {
  
+  // constructor(
+  //   public sunIcon: HTMLElement,
+  //   public moonIcon: HTMLElement,
+  // ){
+  // }
+
+  // ngOnInit(): void {
+  //   this.sunIcon = document.querySelector<HTMLElement>(".sun")!;
+  //   this.moonIcon = document.querySelector<HTMLElement>(".moon")!;
+  //   return;
+  // }
+ 
   
-openMenue(){
-  let menueButton: HTMLElement = document.getElementById('menue-button')!;
-  console.log(menueButton)
-  menueButton.addEventListener("click", () => {
-    console.log("button works")
-  });
+  // const userTheme = localStorage.getItem("theme");
+  // const systemThem = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  
+  // const iconToggle = (): void => {
+  //     this.moonIcon?.classList.toggle("hidden");
+  //     this.sunIcon?.classList.toggle("hidden");
+  // };
+  
+  // const themeCheck = (): void => {
+  //     if (this.userTheme === "dark" || (!this.userTheme && this.systemThem)) {
+  //         document.documentElement.classList.add("dark");
+  //         this.moonIcon?.classList.add("hidden");
+  //         return;
+  //     }
+  //     this.sunIcon?.classList.add("hidden");
+  // };
+  
+  // const themeSwitch = (): void => {
+  //     if (document.documentElement.classList.contains("dark")) {
+  //         document.documentElement.classList.remove("dark");
+  //         localStorage.setItem("theme", "Light");
+  //         this.iconToggle();
+  //         return;
+  //     }
+  //     document.documentElement.classList.add("dark");
+  //     localStorage.setItem("theme", "dark");
+  //     this.iconToggle();
+  // };
+  
+  // sunIcon?.addEventListener("click", () => {
+  //     themeSwitch();
+  // });
+  
+  // this.moonIcon?.addEventListener("click", () => {
+  //     console.log("succes");
+  //     themeSwitch();
+  // });
+  
+  // themeCheck();
+  
 }
 
-}
+
+
 
