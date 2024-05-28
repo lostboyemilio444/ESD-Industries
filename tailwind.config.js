@@ -3,10 +3,13 @@ module.exports = {
   darkMode: 'media',
   content: [
     "./src/**/*.{html,ts,js}",
+    "./node_modules/flowbite/**/*.js" 
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [ 
+    require('flowbite/plugin')
+],
 }
 

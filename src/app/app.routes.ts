@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 export const routes: Routes = [
  
@@ -25,6 +26,11 @@ export const routes: Routes = [
         path:"Impressum",
         component: ImpressumComponent,
         title: "ESB IMPRESSUM",
+    },
+    {
+        path:"termsandconditions",
+        component: TermsAndConditionsComponent,
+        title: "Terms and Conditions",
     }
   
 

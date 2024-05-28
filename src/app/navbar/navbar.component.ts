@@ -3,20 +3,53 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { ImpressumComponent } from '../impressum/impressum.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
+import { NgIf } from '@angular/common';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule, HomeComponent, ImpressumComponent, ContactMeComponent],
+  imports: [RouterModule, HomeComponent, ImpressumComponent, ContactMeComponent,NgIf],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
  
-  // constructor(
-  //   public sunIcon: HTMLElement,
-  //   public moonIcon: HTMLElement,
+  
+  visible:boolean=false
+
+  MenueIcon:boolean= true
+
+  CloseIcon:boolean= false
+
+  Menue:boolean = true
+
+  MoonIcon:boolean = true
+
+  SunIcon:boolean = false
+
+  onclick(){
+    this.Menue = !this.Menue
+    this.MenueIcon = !this.MenueIcon
+    this.CloseIcon = !this.CloseIcon
+    this.visible = !this.visible
+  }
+
+  themeIconSwitch(){
+    this.MoonIcon = !this.MoonIcon
+    this.SunIcon = !this.SunIcon
+  }
+  presentTheme$ = new BehaviorSubject<string>('theme-light');
+
+  themeChecker(){
+    this.presentTheme$.value === 'theme-light'
+    ? this.presentTheme$.next('theme-dark')
+    : this.presentTheme$.next('theme-light');
+  localStorage.setItem('theme', this.presentTheme$.value);
+  }
+  
   // ){
   // }
 

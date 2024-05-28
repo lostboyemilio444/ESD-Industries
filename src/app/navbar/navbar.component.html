@@ -1,54 +1,9 @@
 
-  
-
-<div id="start-screen" style="display: none;"  class="flex flex-col intro justify-center items-center absolute w-screen h-screen  bg-stone-400 z-500">
-
-   
-    <!-- <img id="logo" src="medien/Nothing phone wallpaper.png" class="absolute w-full h-full z-0"/> -->
-   <div class="flex flex-col w-full h-full justify-center items-center  ">
-            <div class="flex flex-row justify-end  w-screen h-1/6 z-20">
-                <svg xmlns="http://www.w3.org/2000/svg" onclick="closemenue()" width="45" height="45" fill="black" class="bi bi-x transition duration-500 hover:scale-110 rounded-full bg-white hover:bg-red-500 hover:fill-white" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-            </div>
-            <div class="flex flex-col justify-center items-center w-screen h-4/6">
-                
-                <div class="flex flex-col w-5/6 h-full justify-center items-center rounded-xl gap-6 bg-white blur-60 z-20 shadow-lg shadow-black/30">
-                   
-                </div>
-               
-            </div>
-            <div class="flex flex-row justify-center items-center w-screen h-1/6">
-                <div class="flex flex-row justify-center items-center h-full w-1/3">
-                   
-                </div>
-                <div class="flex flex-col w-4/6 h-4/6 justify-center items-center text-center mb-5 rounded-2xl gap-4 mt-8">
-                    <h1 class="text-stone-100 text-sm ">
-                        RECHTLICHES
-                    </h1>
-
-                    <a onclick="closemenue()" href="#home" class="text-sm text-stone-300  transition duration-500 hover:scale-110 hover:text-red-500">
-                        IMPRESSUM
-                    </a>
-                    <a onclick="closemenue()" href="/digital dream 2/dist/Datenschutz.html" class="text-sm text-stone-300  transition duration-500 hover:scale-110 hover:text-red-500">
-                    DATENSCHUTZ
-                    </a>
-                    <div class="w-full h-10">
-
-                    </div>
-                </div>  
-                <div class="flex flex-row justify-center items-center h-full w-1/3">
-                   
-                </div>
-                
-            </div>
-   </div>
-</div>
-<div class="flex flex-row justify-center w-screen h-16 bg-white dark:bg-black border-solid border-b-2 border-black/5 dark:border-white/5 z-40">
+<div class="flex flex-row justify-center w-screen h-16 bg-gradient-to-b  from-stone-100 via-stone-100 to-stone-100/0 dark:from-stone-950 dark:via-stone-950 dark:to-stone-950/00 z-40">
     
  <div class="flex flex-row justify-center items-center w-1/2 md:w-1/4 h-full">
     <a routerLink="" class="flex flex-row justify-center items-center ml-5 md:ml-0 ">
-        <h1 class="text-black dark:text-white font-bold text-xl font-sans">
+        <!-- <h1 class="text-black dark:text-white font-bold text-xl font-sans">
             ESD
         </h1>
         <h1 class="text-green-400 font-bold text-xl font-serif">
@@ -56,7 +11,8 @@
         </h1>
         <h1 class="text-black dark:text-white font-extralight text-xl ">
             Industries
-        </h1>
+        </h1> -->
+        <img class="w-20 mr-20 md:mr-0 md:w-28 invert dark:invert-0" src="../../assets/img/Schwarz und Weiß Linien Architektur Logo (1).png"/>
     </a>
         <div class="flex flex-row h-full w-0 md:w-1/2 justify-center items-center gap-3 ">
             <a href="https://www.amazon.de/s?me=A24RN51NB8SZ0X&marketplaceID=A1PA6795UKMFR9">
@@ -81,7 +37,7 @@
     
   </div>
   <div class="flex flex-row items-center gap-2 md:gap-8 justify-end mr-5 w-1/2 md:w-2/4 h-full">
-    <button type="button" class="rounded-lg text-sm ">
+    <button type="button" class="rounded-lg text-sm hidden md:block">
 
         <svg id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="" class="bi bi-moon-fill fill-stone-400 hover:fill-green-400 w-5 h-5 moon" viewBox="0 0 16 16">
             <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
@@ -92,30 +48,64 @@
           </svg>
      
     </button>
-    <a id="home-nav"  class="text-black/60 dark:text-white/70 text-center hidden md:block   text-lg hover:text-black dark:hover:text-white" routerLink="" href="#home">
+    <a id="home-nav"  class="text-black/60 dark:text-white/70 text-center hidden md:block   text-lg hover:text-green-400 dark:hover:text-white" routerLink="" href="#home">
         Home
     </a>
-     <a onclick="aboutclick()" id="about" class="text-black/60 dark:text-white/70 text-center hidden md:block text-lg hover:text-black dark:hover:text-white" href="#aboutme" >
+     <a onclick="aboutclick()" id="about" class="text-black/60 dark:text-white/70 text-center hidden md:block text-lg hover:text-green-400 dark:hover:text-white" href="#aboutme" >
         About 
      </a>
-     <a id="impressum" class="text-black/60 dark:text-white/70 text-center hidden md:block text-lg hover:text-black dark:hover:text-white" href="#Impressum">
+     <a id="impressum" class="text-black/60 dark:text-white/70 text-center hidden md:block text-lg hover:text-green-400 dark:hover:text-white" href="#Impressum">
         Impressum
      </a>
-     <button id="kontakt" class="flex flex-col w-28 h-10 rounded-full justify-center items-center hover:bg-green-200   dark:hover:bg-green-400/30 ">
+     <button id="kontakt" class="flex flex-col w-28 h-10 rounded-full justify-center hidden md:block items-center hover:bg-green-200   dark:hover:bg-green-400/30 ">
         <a  class="text-green-700 dark:text-green-400 text-center  text-lg " routerLink="contactme">
             Kontakt
         </a>
      </button>
      
-         <button id="menue-button" class="menue-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list fill-black/60 dark:fill-white/70 hover:fill-black dark:hover:fill-white ease-in-out duration-200 hover:scale-110 md:hidden block" viewBox="0 0 16 16">
+         <button (click)="onclick()"  id="menue-button" class="menue-button z-40 ease-in-out duration-200 hover:scale-110 ">
+            <svg *ngIf="MenueIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list fill-black/60 dark:fill-white/70 hover:fill-black dark:hover:fill-white ease-in-out duration-200 hover:scale-110 md:hidden block" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
+            <svg *ngIf="CloseIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg  fill-red-500/80 dark:fill-white/70 hover:fill-black dark:hover:fill-white ease-in-out duration-200 hover:scale-110 md:hidden block" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
          </button>
     
      
 
      
+  </div>
+
+  <div *ngIf="visible" class="flex flex-col justify-start items-center absolute w-1/2 right-0 h-screen bg-stone-100 z-30">
+    <div class="flex flex-col justify-center items-center text-right mt-16 gap-4">
+        <a id="home-nav" (click)="onclick()" class="text-black/60 dark:text-white/70 text-right    text-lg hover:text-green-400 dark:hover:text-white ease-in-out duration-200 hover:scale-110 " routerLink="" href="#home">
+            Home
+        </a>
+         <a onclick="aboutclick()" id="about" (click)="onclick()" class="text-black/60 dark:text-white/70 text-right  text-lg hover:text-green-400 dark:hover:text-white ease-in-out duration-200 hover:scale-110 "  href="#aboutme" >
+            About 
+         </a>
+         <a id="impressum" (click)="onclick()" class="text-black/60  dark:text-white/70 text-right  text-lg hover:text-green-400 dark:hover:text-white ease-in-out duration-200 hover:scale-110 " href="#Impressum">
+            Impressum
+         </a>
+         <button id="kontakt" (click)="onclick()" class="flex flex-col w-28 h-8 rounded-full justify-center items-center bg-green-200   dark:hover:bg-green-400/30 ease-in-out duration-200 hover:scale-110 ">
+            <a  class="text-green-700 dark:text-green-400 text-center  text-lg " routerLink="contactme">
+                Kontakt
+            </a>
+         </button>
+         <button type="button" (click)="themeIconSwitch()" class="rounded-lg text-sm ">
+
+            <svg id="theme-toggle-light-icon" *ngIf="MoonIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="" class="bi bi-moon-fill fill-green-400 w-5 h-5 moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+              </svg>
+    
+              <svg id="theme-toggle-light-icon" *ngIf="SunIcon"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high fill-green-400 w-5 h-5 sun" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+              </svg>
+         
+        </button>
+    </div>
+   
   </div>
 
   

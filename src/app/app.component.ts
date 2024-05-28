@@ -1,56 +1,50 @@
-import { Component } from '@angular/core';
+import { Component,PLATFORM_ID, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NgIf } from '@angular/common';
+import { OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
+import { CaruselComponent } from './carusel/carusel.component';
+import { isPlatformBrowser } from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, AboutMeComponent, ContactMeComponent, HomeComponent, 
-    ImpressumComponent, NavbarComponent],
+    ImpressumComponent, NavbarComponent, NgIf, CaruselComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   // sunIcon = document.querySelector(".sun");
-  // moonIcon = document.querySelector(".moon")
+ visible:boolean=false
 
-  // userTheme = localStorage.getItem("theme");
-  // systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+ visible2:boolean=false
+ Terms:boolean= true
 
-//   iconToggle(): void {
-//     this.moonIcon?.classList.toggle("hidden");
-//     this.sunIcon?.classList.toggle("hidden");
-//   };
+ onclick2(){
+  this.Terms = !this.Terms
+  this.visible2 = !this.visible2
+ }
 
-//   themeCheck(): void {
-//     if(this.userTheme === "dark" || (!this.userTheme && this.systemTheme)){
-//       document.documentElement.classList.add("dark");
-//       this.moonIcon?.classList.add("hidden");
-//       return;
-//     }
-//       this.sunIcon?.classList.add("hidden");
-//   };
+  Newsletter:boolean = true
+onclick(){
+  this.Newsletter = !this.Newsletter
+  this.visible = !this.visible
+}
 
-   
-
-//   const themeSwitch (): void {
-//     if(document.documentElement.classList.contains("dark")){
-//       document.documentElement.classList.remove("dark");
-//       localStorage.setItem("theme", "light");
-//       this.iconToggle();
-//       return;
-//     } 
-//     document.documentElement.classList.add("dark");
-//     localStorage.setItem("theme", "dark");
-//     this.iconToggle();
-    
-// };
       
   
+title = 'web-app';
+constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-  title = 'MyPortfolio';
+ngOnInit(): void {
+  if (isPlatformBrowser(this.platformId)) {
+    initFlowbite();
+  }
+}
 }
