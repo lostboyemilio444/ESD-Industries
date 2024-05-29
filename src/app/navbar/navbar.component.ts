@@ -5,13 +5,14 @@ import { ImpressumComponent } from '../impressum/impressum.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
 import { NgIf } from '@angular/common';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { CaruselComponent } from '../carusel/carusel.component';
 
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule, HomeComponent, ImpressumComponent, ContactMeComponent,NgIf],
+  imports: [RouterModule, HomeComponent, ImpressumComponent, ContactMeComponent,NgIf, CaruselComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -30,11 +31,32 @@ export class NavbarComponent {
 
   SunIcon:boolean = false
 
+  TermsClose(){
+    this.Terms = !this.Terms
+  }
+
+  Newsletter:boolean = false
+  NewsletterStatus:boolean = true
+  Terms:boolean = false
+
   onclick(){
     this.Menue = !this.Menue
     this.MenueIcon = !this.MenueIcon
     this.CloseIcon = !this.CloseIcon
     this.visible = !this.visible
+  }
+  NewsletterOpen(){
+    this.Newsletter = !this.Newsletter
+    this.Menue = !this.Menue
+    this.NewsletterStatus = !this.NewsletterStatus
+  }
+  NewsletterClose(){
+    this.Newsletter = !this.Newsletter
+    this.NewsletterStatus = !this.NewsletterStatus
+  }
+
+  DatenschutzOpen(){
+    this.Terms = !this.Terms
   }
 
   themeIconSwitch(){

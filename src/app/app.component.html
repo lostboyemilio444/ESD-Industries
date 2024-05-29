@@ -7,13 +7,13 @@
 
 <app-navbar class="fixed top-0 z-40"></app-navbar>
 
-<div *ngIf="visible" id="newsletter" class="flex flex-col fixed justify-center  items-center w-screen h-screen z-40 bg-stone-400/20 newsletter">
-          <div  class="flex flex-col gap-2 justify-center items-center text-center w-4/6 h-4/6 rounded-3xl bg-white ">
+<div *ngIf="visible" id="newsletter" class="flex flex-col fixed justify-center  items-center w-screen h-screen z-40 bg-black/50  newsletter">
+          <div  class="flex flex-col gap-2 justify-center items-center text-center w-96 md:w-4/6 h-4/6 rounded-3xl bg-white dark:bg-stone-900 ">
               <DIV class="w-full H-1/5 flex gap-4 flex-col justify-start items-center">
-                      <h1 class="bg-clip-text  text-3xl text-transparent bg-gradient-to-r mb-2  from-green-400 to-cyan-500 font-semibold">
+                      <h1 class="bg-clip-text  text-2xl md:text-3xl text-transparent bg-gradient-to-r mt-3 md:mb-2  from-green-400 to-cyan-500 font-semibold">
                         Tritt unseren Newsletter bei
                       </h1>
-                      <div class="flex flex-col relative justify-center items-center  text-center w-5/6 h-40 rounded-3xl bg-stone-700">
+                      <div class="flex flex-col relative justify-center items-center overflow-hidden text-center w-5/6 h-40 rounded-3xl bg-stone-700">
                         
                         <app-carusel class="w-full "></app-carusel>
                         
@@ -22,7 +22,7 @@
               <DIV class="flex flex-col justify-center items-center w-full H-3/5">
                 <form id="Emailform"  class="w-5/6 " action="mailto:esd.industreis@gmail.com?subject=Newsletter beitrit?body=Neuer Newsletter beitritt" method="get" enctype="text/plain">
                   <div class="mb-6 w-full">
-                      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-stone-200">Gib uns nur noch deine Email-Adresse</label>
+                      <label for="email" class="block mb-2 text-sm md:text-sm font-medium text-gray-900 dark:text-stone-200">Gib uns nur noch deine Email-Adresse</label>
                       <input type="email" id="email" class=" bg-stone-100 dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-stone-200 text-sm rounded-lg focus:ring-green-400 focus:border-green-500  w-full p-2.5 placeholder:text-black/30 dark:placeholder:text-white/30" placeholder="Vor-.Nachname@Email.com" required>
                   </div> 
                   
@@ -30,31 +30,31 @@
                       <div class="flex items-center h-5">
                       <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-stone-800 rounded-full focus:ring-2 focus:outline-none  " required>
                       </div>
-                      <label for="remember"  class="ml-2 text-sm text-left font-medium text-gray-900 dark:text-stone-200">Ich stimme dem beitret zum Email-Newsletter und der damit zusammenhängenden Datenschutzerklärung zu. </label>
+                      <label for="remember"  class="ml-2 text-xs md:text-sm text-left font-medium text-gray-900 dark:text-stone-200">Ich stimme dem beitret zum Email-Newsletter und der damit zusammenhängenden Datenschutzerklärung zu. </label>
                   </div>
       
-                  <button type="submit" (click)="onclick2()" class="text-blue-700 dark:text-blue-400 bg-blue-200  mt-4  focus:ring-4 text-xl focus:outline-none focus:ring-blue-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-blue-400/30 dark:focus:ring-blue-800 transition duration-500 hover:scale-110 z-50">
+                  <button type="submit" (click)="onclick2()" class="text-blue-700 dark:text-stone-900 bg-blue-200 dark:bg-gradient-to-r from-blue-400 to-cyan-500   mt-4 items-center focus:ring-4 text-lg md:text-xl focus:outline-none focus:ring-blue-400 font-medium rounded-full w-full  px-5 py-2.5 text-center dark:bg-blue-400/30 dark:focus:ring-blue-800 transition duration-500 hover:scale-110 z-50">
                     {{Terms?"Zur Datenschutzerklärung":"Datenschutzerklärung schließen"}}
                 </button>
-                  <button type="submit"  class="text-green-700 dark:text-green-400 bg-green-200  mt-4  focus:ring-4 text-xl focus:outline-none focus:ring-green-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-green-400/30 dark:focus:ring-green-800 transition duration-500 hover:scale-110">
+                  <button type="submit"  class="text-green-700 dark:text-stone-900 bg-green-200  dark:bg-gradient-to-r from-green-400 to-lime-500  mt-4  text-lg md:text-xl focus:ring-4  focus:outline-none focus:ring-green-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-green-400/30 dark:focus:ring-green-800 transition duration-500 hover:scale-110">
                       Jetzt beitreten!
                   </button>
               </form>
               </DIV>
               <DIV class="w-5/6 H-1/5">
-                <button (click)="onclick()" class="text-red-700 dark:text-red-400 bg-red-200  mt-4  focus:ring-4 text-xl focus:outline-none focus:ring-red-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-red-400/30 dark:focus:red-blue-800 transition duration-500 hover:scale-110">
+                <button (click)="onclick()" class="text-red-700 dark:text-stone-900 bg-red-200  dark:bg-gradient-to-r from-red-400 to-pink-500  mt-4 text-lg md:text-xl focus:ring-4 focus:outline-none focus:ring-red-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-red-400/30 dark:focus:red-blue-800 transition duration-500 hover:scale-110">
                   {{Newsletter?"Öfnenn ":"Schließen"}}
                  </button>
               </DIV>
           </div>
-          <div  *ngIf="visible2"  class="flex flex-col absolute justify-center items-center w-4/6 h-4/6 rounded-3xl bg-white z-50">
+          <div  *ngIf="visible2"  class="flex flex-col absolute justify-center items-center w-96 md:w-4/6 h-4/6 rounded-3xl bg-white dark:border-solid dark:border-2 dark:border-cyan-400/50 dark:bg-stone-900 z-50">
             <div class="flex flex-col justify-center items-center w-full h-1/6">
-              <h1 class="bg-clip-text  text-3xl text-transparent bg-gradient-to-r mb-2  from-green-400 to-cyan-500 font-semibold">
+              <h1 class="bg-clip-text  text-2xl md:text-3xl text-transparent bg-gradient-to-r mb-2  from-green-400 to-cyan-500 font-semibold">
                 Datenschutzerklärung
               </h1>
             </div>
             <div class="flex flex-col justify-center w-5/6 h-4/6 overflow-y-scroll">
-                <h1 class="text-left ">
+                <h1 class="text-left dark:text-white text-black ">
                               <a class="text-black/0">
                                 1. Allgemeine Hinweise und Grundsätze der Datenverarbeitung<br>
                                 Wir freuen uns, dass Sie unsere Webseite besuchen. Der Schutz Ihrer Privatsphäre und der Schutz Ihrer persönlichen Daten, der sog. personenbezogenen Daten, bei der Nutzung unserer Webseite ist uns ein wichtiges Anliegen.
@@ -605,14 +605,14 @@
             </div>
             <div class="flex flex-col justify-center w-5/6 h-1/6 ">
              
-                <button type="submit" (click)="onclick2()" class="text-blue-700 dark:text-blue-400 bg-blue-200   focus:ring-4 text-xl focus:outline-none focus:ring-blue-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-blue-400/30 dark:focus:ring-blue-800 transition duration-500 hover:scale-110 z-50">
+                <button type="submit" (click)="onclick2()" class="text-blue-700 dark:text-stone-900 bg-blue-200 dark:bg-gradient-to-r from-blue-400 to-cyan-500  focus:ring-4 text-lg md:text-xl focus:outline-none focus:ring-blue-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-blue-400/30 dark:focus:ring-blue-800 transition duration-500 hover:scale-110 z-50">
                   {{Terms?"zur Datenschutzerklärung ":"Zurück"}}
               </button>
             </div>
           </div>
           
 </div>
-<button (click)="onclick()" class="w-32 h-10 p-2 hidden rounded-3xl fixed z-50 bg-red-300 text-white font-light">
+<button (click)="onclick()" class="w-32 h-10 p-2  rounded-3xl fixed z-50 bg-red-300 text-white font-light">
   {{Newsletter?"Öfnen ":"Schliessen "}}
  </button>
   
