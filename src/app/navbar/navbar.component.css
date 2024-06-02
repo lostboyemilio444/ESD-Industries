@@ -14,6 +14,63 @@
     }
   }
 
+  @keyframes move-it {
+    0% {
+      background-position: initial;
+    }
+    100% {
+      background-position: 100px 0px;
+    }
+  }
+  
+  #body {  
+    background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 5%,
+    #465298 5%,
+    #465298 10%
+  );
+   
+    animation: move-it 2s linear infinite;
+  }
+
+  #body2 {  
+    background: repeating-linear-gradient(
+    45deg,
+    #bc6060,
+    #bc6060 5%,
+    #984646 5%,
+    #984646 10%
+  );
+   
+    animation: move-it 2s linear infinite;
+  }
+
+  #bodywhite {  
+    background: repeating-linear-gradient(
+    45deg,
+    #ffb4b4,
+    #ffc0c0 5%,
+    #ffffff 5%,
+    #ffffff 10%
+  );
+   
+    animation: move-it 2s linear infinite;
+  }
+
+  #bodybluewhite {  
+    background: repeating-linear-gradient(
+    45deg,
+    #a0aae8,
+    #9fa9e7 5%,
+    #ffffff 5%,
+    #ffffff 10%
+  );
+   
+    animation: move-it 2s linear infinite;
+  }
+
   /* .intro{
     position: fixed;
     left: 0;
