@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-center w-screen h-screen  bg-stone-100 dark:bg-stone-950 z-20 gap-4">
+<div class="flex flex-col justify-center items-center w-screen h-screen  bg-stone-100 dark:bg-stone-950 z-20 gap-4 overflow-hidden">
     <div class="flex flex-col w-5/6 h-1/6 md:block hidden justify-center items-center mt-10 md:mt-16 gap-4">
         <div class="flex flex-row justify-center items-center ">
             <h1 class="text-black dark:text-white font-bold text-xl md:text-2xl font-sans">
@@ -115,31 +115,32 @@
        
         <div class="flex relative flex-row justify-center items-center  md:rounded-t-3xl  w-full h-full  bg-white dark:bg-stone-900 z-20   ">
             <svg xmlns="http://www.w3.org/2000/svg" class="  absolute h-32 bottom-0 object-cover " viewBox="0 0 1440 320">
-                <path fill="#5020ca" class="dark:fill-purple-600 fill-purple-300" fill-opacity="1" d="M0,64L120,80C240,96,480,128,720,117.3C960,107,1200,53,1320,26.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+                <path fill="#5020ca" class="dark:fill-purple-600 fill-purple-400" fill-opacity="1" d="M0,64L120,80C240,96,480,128,720,117.3C960,107,1200,53,1320,26.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
             </svg>
 
 
-            <div class="flex flex-col justify-center items-center z-10  w-1/4  h-full shadow-sm rounded-3xl gap-4 ">
-                <div class="flex flex-col justify-center items-center  w-28 ml-4  h-60 z-10   bg-stone-100  dark:bg-stone-950 rounded-3xl">
-                </div>
+            <div class="flex flex-col justify-center items-center z-10  w-1/4 mb-6  h-full shadow-sm rounded-3xl gap-4  ">
+                    <div class="flex flex-col justify-center items-center  w-28 ml-4  h-60 z-10   bg-stone-100/90 border-solid border-2 border-stone-200 dark:border-stone-800  dark:bg-stone-950/80 rounded-3xl">
+                        <h1 class="text-green-700  dark:text-green-400 text-center w-full  text-xs  dark:hover:text-white p-1">
+                            Powered by
+                        </h1>
+            
+                        
+                        <h1 class="text-black/40 dark:text-white/70 text-center w-full  text-xs hover:text-green-400 dark:hover:text-white p-1">
+                                Gabriel Hanewinkel
+                        </h1>
+                    </div>
             </div>
-         <div class="flex flex-col justify-center items-center z-10 w-2/4 h-full gap-4 ">
+         <div class="flex flex-col justify-center items-center z-10 w-2/4 h-full mb-6 gap-4 ">
                 <div class="flex flex-col justify-center w-full h-28">
                                 <h1 class="text-black/40 dark:text-white/40 font-light text-xs md:text-sm font-sans ml-10 md:ml-0 text-left ">
                                     © Eliano Shayan Darabi, <br>All Rights Reserved
                                 </h1>
                                 
-                                <h1 class="text-black/20 dark:text-white/20 ml-10 font-extralight text-xs md:text-sm text-left font-serif  w-full">
-                                    Powered by
-                                </h1>
-                    
-                                
-                                    <h1 class="text-black/30 dark:text-white/30 w-full text-left ml-10 font-extralight text-xs  hover:text-green-400 ">
-                                        Gabriel Hanewinkel
-                                    </h1>
+                              
                 </div>
           
-                <div class="flex flex-col justify-center items-center  w-40  h-28 z-10   bg-stone-100  dark:bg-stone-950 rounded-3xl">
+                <div class="flex flex-col justify-center items-center  w-40  h-28 z-10   bg-stone-100/80 dark:bg-stone-950/90 border-solid border-2 border-stone-200 dark:border-stone-800 rounded-3xl">
                     <div class="flex row justify-around items-center w-full   h-1/2 gap-4">
                                     <a href="https://www.amazon.de/s?me=A24RN51NB8SZ0X&marketplaceID=A1PA6795UKMFR9">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-amazon  fill-stone-400 hover:fill-green-400" viewBox="0 0 16 16">
@@ -172,8 +173,8 @@
           </div>
       
         </div>
-        <div class="flex flex-col justify-center items-center z-10  w-1/4  h-full shadow-sm rounded-3xl gap-4 ">
-            <div class="flex flex-col justify-center items-center z-10  w-28  h-28 mr-4 shadow-sm rounded-3xl bg-stone-100 dark:bg-stone-950">
+        <div class="flex flex-col justify-center items-center z-10  w-1/4 mb-6 h-full shadow-sm rounded-3xl gap-4 ">
+            <div class="flex flex-col justify-center items-center z-10  w-28  h-28 mr-4 shadow-sm rounded-3xl bg-stone-100/90 dark:bg-stone-950/80 border-solid border-2 border-stone-200 dark:border-stone-800">
                 <a id="home-nav"  class="text-black/40 dark:text-white/70 text-left w-full ml-12   text-xs hover:text-green-400 dark:hover:text-white" routerLink="" href="#home">
                     Home
                 </a>
@@ -189,7 +190,7 @@
                     </a>
                  </button>
             </div>
-            <div class="flex flex-col justify-center items-center z-10  w-28  h-28 mr-4 shadow-sm rounded-3xl bg-stone-100 dark:bg-stone-950">
+            <div class="flex flex-col justify-center items-center z-10  w-28  h-28 mr-4 shadow-sm rounded-3xl bg-stone-100/90 dark:bg-stone-950/80 border-solid border-2 border-stone-200 dark:border-stone-800">
                 <a id="home-nav"  class="text-black/40 dark:text-white/70 text-center w-full  text-xs hover:text-green-400 dark:hover:text-white" routerLink="" href="#home">
                     Datenschutz
                 </a>
