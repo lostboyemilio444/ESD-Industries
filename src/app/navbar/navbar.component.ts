@@ -6,13 +6,14 @@ import { ContactMeComponent } from '../contact-me/contact-me.component';
 import { NgIf } from '@angular/common';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { CaruselComponent } from '../carusel/carusel.component';
+import { NewsletterComponent } from '../newsletter/newsletter.component';
 
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule, HomeComponent, ImpressumComponent, ContactMeComponent,NgIf, CaruselComponent],
+  imports: [RouterModule, HomeComponent, ImpressumComponent, ContactMeComponent,NgIf, CaruselComponent, NewsletterComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

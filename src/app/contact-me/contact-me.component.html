@@ -43,19 +43,21 @@
         </rect>
         </svg>
     </div>
-    <div class="flex flex-col justify-center items-center md:w-3/5  w-5/6 h-4/5 md:h-5/6 rounded-xl z-30 bg-white/70 dark:bg-black/70 shadow-md  mt-2 ">
-        <div class="flex flex-row justify-center items-center mb-5">
-            <h1 class="text-black dark:text-white font-bold text-xl md:text-3xl font-sans">
-                ESD
+    <div class="flex flex-col justify-center relative items-center md:w-3/5 overflow-hidden w-5/6 h-4/5 md:h-5/6 rounded-3xl z-30 bg-white/70 dark:bg-black/70 border-solid border-2 dark:border-green-400/60 shadow-md  mt-2 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-0 h-72 z-0" viewBox="0 0 1440 320"><path fill="#00cba9"  fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,234.7C640,256,800,256,960,229.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        </svg>
+        <div class="flex flex-row justify-center items-center mb-5 md:mb-10 z-10">
+            <h1 class="text-black dark:text-white font-bold text-md md:text-2xl font-sans">
+                WINNUP
             </h1>
-            <h1 class="text-green-400 font-bold text-xl md:text-3xl font-serif">
+            <h1 class="text-white dark:text-stone-950 font-bold text-md md:text-2xl font-serif">
                 |
             </h1>
-            <h1 class="text-black dark:text-white font-extralight text-xl md:text-3xl ">
-                Kontakt
+            <h1 class="text-black dark:text-white font-extralight text-md md:text-2xl ">
+                Q&A
             </h1>
         </div>
-        <div class="flex flex-col justify-center items-center rounded-full w-20 h-20 mb-6 bg-white dark:bg-black ">
+        <div class="flex flex-col z-10 justify-center items-center rounded-full w-20 h-20 mb-6 md:mb-20 bg-white dark:bg-black ">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="" class="bi bi-envelope fill-green-400" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
             </svg>
@@ -81,13 +83,13 @@
                 <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-stone-200">Wähle ein Betreff</label>
                 <select name="subject" type="text" class="  bg-stone-100 dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-black dark:text-white/30 text-sm rounded-lg focus:ring-green-500 focus:border-green-500  w-full p-2.5   placeholder:text-black/30 dark:placeholder:text-white/30 dark:text-stone-200 dark:focus:ring-green-500 dark:focus:border-green-500">
                 <option class="text-black dark:text-white/30" selected>Betreff</option>
-                <option class="text-black dark:text-white/30"  value="B2B Anfrage">B2B Anfragen</option>
-                <option class="text-black dark:text-white/30"  value="B2C Anfrage">B2C Anfragen</option>
-                <option class="text-black dark:text-white/30"  value="Sonstiges">Sonstiges</option>
+                <option class="text-black dark:text-white/30"  value="B2B Anfrage">B2B Fragen</option>
+                <option class="text-black dark:text-white/30"  value="B2C Anfrage">B2C Fragen</option>
+                <option class="text-black dark:text-white/30"  value="Sonstiges">Sonstige Fragen</option>
                 </select>
             </div>
             <div class="mb-6 w-full">
-                <label  for="body"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-stone-200">Details zur Anfrage</label>
+                <label  for="body"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-stone-200">Details zur Frage</label>
                 <input type="text" name="body" class="   bg-stone-100 dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-stone-200 text-sm rounded-lg focus:ring-green-400 focus:border-green-500  w-full p-2.5  placeholder:text-black/30 dark:placeholder:text-white/30" placeholder="Was können wir tun?" required>
             </div> 
         
@@ -98,7 +100,7 @@
                 <label for="remember"  class="ml-2 text-sm font-medium text-gray-900 dark:text-stone-200">Ich stimme zu das die die Email abgesendet wird <a routerLink="termsandconditions" class="text-blue-600 hover:underline dark:text-blue-500" >terms and conditions</a>.</label>
             </div>
 
-            <button type="submit"  class="text-green-700 dark:text-green-400 bg-green-200  mt-4  focus:ring-4 text-xl focus:outline-none focus:ring-green-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-green-400/30 dark:focus:ring-green-800 transition duration-500 hover:scale-110">
+            <button type="submit"  class="text-white dark:text-stone-950 bg-gradient-to-r from-green-400 to-cyan-500 mt-4  focus:ring-4 text-xl focus:outline-none focus:ring-green-400 font-medium rounded-full  w-full  px-5 py-2.5 text-center dark:bg-green-400/30 dark:focus:ring-green-800 transition duration-500 hover:scale-110">
                 Senden
             </button>
         </form>

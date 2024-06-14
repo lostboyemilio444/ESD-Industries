@@ -23,7 +23,7 @@
  
 
 <div 
-class="flex flex-col justify-center items-center w-screen h-screen 
+class="flex flex-col justify-center items-center w-screen h-full 
        overflow-x-clip overflow-y-clip bg-stone-100 dark:bg-stone-950 z-20 pt-6 md:pt-0 scrollbar-hide" >
 <!-- <div class="progress z-40">
     <h1 id="side-progress" class="top-20 border-solid border-2 fixed border-neutral-200 w-12 h-12 justify-center items-center text-center rounded-xl text-red-700  mr-0 sm:mr-24 shadow-sm shadow-black/40">
@@ -69,11 +69,12 @@ class="flex flex-col justify-center items-center w-screen h-screen
                     </h1>
                  </div>
                 <div class="flex flex-row justify-center md:justify-start w-full   md:mt-5">
-                    <a routerLink="contactme" class="flex flex-row w-60  h-8  rounded-full justify-center items-center  bg-gradient-to-r from-green-400 to-cyan-500 ease-in-out duration-200 hover:scale-110 shadow-sm ">
+                    <!-- <a routerLink="contactme" class="flex flex-row w-60  h-8  rounded-full justify-center items-center  bg-gradient-to-r from-green-400 to-cyan-500 ease-in-out duration-200 hover:scale-110 shadow-sm ">
                         <h1 class="text-white dark:text-black text-center  text-md ">
                             Kontaktieren Sie uns jetzt 
                         </h1>
-                    </a>
+                    </a> -->
+                    <app-newsletter></app-newsletter>
                 </div>
        </div>
     <div class="flex flex-row justify-center md:justify-start w-full pb-2 mt-0 md:mt-2 z-10 hidden md:block">
@@ -81,12 +82,13 @@ class="flex flex-col justify-center items-center w-screen h-screen
             Wir bieten hochwertige Markenware zu attraktiven Preisen an, mit denen du profitabel auf Marktplätzen wie Amazon verkaufen kannst.
         </h1>
      </div>
-    <div class="flex flex-row justify-center md:justify-start w-full mt-8  md:mt-5 hidden md:block">
-        <a routerLink="contactme" class="flex flex-row w-52 md:w-60 h-8 md:h-10 z-20 rounded-3xl justify-center items-center bg-green-200 dark:bg-gradient-to-r from-green-400 to-cyan-500 ease-in-out duration-200 hover:scale-110  ">
-                <h1 class="text-green-700  dark:text-black text-center text-md md:text-lg ">
+    <div class="flex flex-row justify-center md:justify-start w-full mt-8 z-20 md:mt-5 hidden md:block">
+        <!-- <a routerLink="contactme" class="flex flex-row w-52 md:w-60 h-8 md:h-10 z-20 rounded-3xl justify-center items-center bg-gradient-to-r from-green-400 to-cyan-500 ease-in-out duration-200 hover:scale-110  ">
+                <h1 class="text-white  dark:text-black text-center text-md md:text-lg ">
                     Kontaktieren Sie uns jetzt 
                 </h1>
-            </a>
+            </a> -->
+            <app-newsletter class="z-20"></app-newsletter>
     </div>
 
     
@@ -100,16 +102,16 @@ class="flex flex-col justify-center items-center w-screen h-screen
                     <h1 class="text-lg md:text-2xl  text-white dark:text-black font-light md:mr-48 mb-2 md:mt-4 block md:hidden">
                         Der Schlüssel zum erfolgreichen Verkauf auf <br>Amazon liegt in ...
                     </h1>
-                    <h1 class="md:text-xl lg:text-2xl lx:text-3xl md:mt-5  text-white dark:text-black font-bold lg:mr-24 xl:mr-32 mb-2 md:p-4 lg:p-8 lg:mt-4 xl:mt-0 hidden md:block">
+                    <h1 class="md:text-3xl lg:text-2xl lx:text-3xl md:mt-5  text-white dark:text-black font-bold lg:mr-24 xl:mr-32 mb-2 md:p-4 lg:p-8 lg:mt-4 xl:mt-0 hidden md:block">
                         Der Schlüssel zum erfolgreichen Verkauf auf Amazon liegt in ...
                     </h1>
                 </div>
                 <div class="flex flex-row w-full h-4/6 p-2">
                     <div class="flex flex-col w-2/6 h-full">
-                        <img id="handybild " class="rotate-12 absolute w-72  md:pr-5 lg:pr-14 lg:mt-16 xl:w-96 xl:pr-24 lg:left-0 xl:top-1 right-52 top-10 md:mt-8 " src="../../assets/img/3d-online-shopping-on-websites-or-mobile-applications-concepts-of-marketing-and-digital-marketing-on-transparent-background-PNG.png"/>
+                        <img id="handybild " class="rotate-12 absolute w-72  md:pr-5 lg:pr-14 lg:mt-16 xl:w-96 xl:pr-24 lg:left-0 xl:top-1 right-52 top-10 md:mt-8 z-0" src="../../assets/img/3d-online-shopping-on-websites-or-mobile-applications-concepts-of-marketing-and-digital-marketing-on-transparent-background-PNG.png"/>
                     </div>
             
-                    <h1 class="flex flex-col justify-center items-center font-thin z-10 rounded-3xl text-black dark:text-white/80 text-sm lg:text-md xl:text-xl md:text-md w-5/6 md:w-4/6 pb-2 md:p-6 h-full pl-4 md:pt-14 xl:pt-8 text-left">
+                    <h1 class="flex flex-col justify-center items-center font-thin z-10 z-0 rounded-3xl text-black dark:text-white/80 text-sm lg:text-md xl:text-xl md:text-md w-5/6 md:w-4/6 pb-2 md:p-6 h-full pl-4 md:pt-14 xl:pt-8 text-left">
                     profitablen Einkaufspreisen und einer zuverlässigen
                         Beschaffung von Produkten. 
                         Bei WINNUP B2B verstehen wir deine Bedürfnisse als Amazon-Händler und 
