@@ -8,5 +8,7 @@ import { Component, Input} from '@angular/core';
   styleUrl: './impressum.component.css'
 })
 export class ImpressumComponent {
-  @Input()email:string = "Mail: esd.industries@gmail.com";
+  @Input()email1:string = "Mail: eliano.darabi@gmail.com";
+  @Input()email2:string = "Mail: hannessschlerf@gmail.com";
+
 }
